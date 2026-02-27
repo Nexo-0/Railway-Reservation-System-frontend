@@ -1,0 +1,84 @@
+:root {
+  --rs-bg: #f3f6f9;
+  --rs-card: #ffffff;
+  --rs-accent: #0f3d5e;
+  --rs-accent-2: #1976d2;
+  --rs-muted: #6b7a90;
+  --rs-border: #e2e8f0;
+}
+
+body {
+  background: radial-gradient(circle at top, #f8fafc 0%, #eef2f7 45%, #e6ecf5 100%);
+  color: #1e293b;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border: 1px solid var(--rs-border);
+  box-shadow: 0 16px 32px -24px rgba(15, 23, 42, 0.35);
+}
+
+.rs-hero {
+  background: linear-gradient(120deg, #0f3d5e 0%, #1d4ed8 55%, #2563eb 100%);
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+}
+
+.rs-pill {
+  background: rgba(15, 61, 94, 0.08);
+  color: var(--rs-accent);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.rs-stat {
+  border-left: 4px solid #1d4ed8;
+  padding-left: 12px;
+}
+
+.rs-table th {
+  background: #e9eff7;
+  color: #1e293b;
+}
+
+.rs-form-card {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.rs-footer {
+  background: #0f172a;
+  color: #cbd5f5;
+}
+
+.rs-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.rs-modal {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 520px;
+  width: calc(100% - 32px);
+  box-shadow: 0 24px 60px -24px rgba(15, 23, 42, 0.55);
+}
